@@ -13,7 +13,7 @@ def get():
     return sys.stdin.readline().strip()
 
 # only for online judges :
-input = io.BytesIO(os.read(0, \ os.fstat(0).st_size)).readline
+input = io.BytesIO(os.read(0, \ os.fstat(0).st_size)).readline #sometimes it will not woek
 
 #to take string input do this :
 s = input().decode()
